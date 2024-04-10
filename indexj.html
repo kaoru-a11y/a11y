@@ -1,0 +1,356 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ja">
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+	<meta name="description" content="児童書や食堂業界誌に描いたイラストの紹介ページです。">
+	<meta name="keywords" content="イラスト,藤嶋,藤嶋芳,ふじしま,かおる,薫,絵本,画">
+
+<title>藤嶋芳のにこにこイラストページ</title>
+
+<style>
+body{
+	background:#f7ffd7 url(images/leih_mir_bw.jpg) repeat fixed;
+	color:#172717;
+	font-family:"Trebuchet MS", "osaka", "メイリオ", sans-serif;
+	/*align:justify;*/
+	line-height:1.25em;
+	direction:rtl;
+}
+
+#wrapper{
+	/*background-color:#888888;*/
+	text-align:center;
+	width:700px;
+	margin:auto;
+	/*border:2px solid #00ffff;*/
+}
+
+#bread	{
+	font-size : 0.75em;
+	margin-top : 10px;
+	margin-bottom : 10px;
+}
+.spanstyle {
+ position:absolute;
+ visibility:visible;
+ top:-50px;
+ font-family:osaka, trebuchet MS, sans-serif;
+ font-weight:bold;
+ color:#3300cc;
+}
+.borderniko{
+	border:1px solid #687a78;
+}
+.line-dotted{
+	border-top:3px dotted #687a78;
+}
+/*▼とても大事▼*/
+div, h1, h2, h3, p, span, table, tr, td, ul, ol, li, a{
+	direction: ltr;
+	!important;
+}
+/*▲とても大事▲*/
+
+</style>
+
+
+<script>
+
+let x,y
+let step=20
+let flag=0
+
+// Your snappy message. Important: the space at the end of the sentence!!!
+let message="consideration&relaxation*** "
+message=message.split("")
+
+let xpos=new Array()
+for (i=0;i<=message.length-1;i++) {
+ xpos[i]=-50
+}
+
+let ypos=new Array()
+for (i=0;i<=message.length-1;i++) {
+ ypos[i]=-50
+}
+
+function handlerMM(e){
+ x = (document.layers) ? e.pageX : document.body.scrollLeft+event.clientX
+ y = (document.layers) ? e.pageY : document.body.scrollTop+event.clientY
+ flag=1
+}
+
+function makesnake() {
+ if (flag==1 && document.all) {
+     for (i=message.length-1; i>=1; i--) {
+      xpos[i]=xpos[i-1]+step
+   ypos[i]=ypos[i-1]
+     }
+  xpos[0]=x+step
+  ypos[0]=y
+
+  for (i=0; i<message.length-1; i++) {
+      let thisspan = eval("span"+(i)+".style")
+      thisspan.posLeft=xpos[i]
+   thisspan.posTop=ypos[i]
+     }
+ }
+
+ else if (flag==1 && document.layers) {
+     for (i=message.length-1; i>=1; i--) {
+      xpos[i]=xpos[i-1]+step
+   ypos[i]=ypos[i-1]
+     }
+  xpos[0]=x+step
+  ypos[0]=y
+
+  for (i=0; i<message.length-1; i++) {
+      let thisspan = eval("document.span"+i)
+      thisspan.left=xpos[i]
+   thisspan.top=ypos[i]
+     }
+ }
+  let timer=setTimeout("makesnake()",30)
+}
+
+</script>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- Hide from old browsers
+
+        function a(txt) {
+                self.status = txt
+        }
+
+        function b() {
+                self.status = "BOOKMARK THIS SITE TODAY!"
+        }
+// --End Hiding Here -->
+
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+function newImage(arg) {
+ if (document.images) {
+  rslt = new Image();
+  rslt.src = arg;
+  return rslt;
+ }
+}
+
+function changeImages() {
+ if (document.images && (preloadFlag == true)) {
+  for (let i=0; i<changeImages.arguments.length; i+=2) {
+   document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+  }
+ }
+}
+
+let preloadFlag = false;
+function preloadImages() {
+ if (document.images) {
+  enter_01002 = newImage("pics/enter_01-02.gif");
+  preloadFlag = true;
+ }
+}
+
+// -->
+</SCRIPT>
+
+</HEAD>
+
+
+<script>
+<!-- Beginning of JavaScript -
+
+for (i=0;i<=message.length-1;i++) {
+    document.write("<span id='span"+i+"' class='spanstyle'>")
+ document.write(message[i])
+    document.write("</span>")
+}
+
+if (document.layers){
+ document.captureEvents(Event.MOUSEMOVE);
+}
+document.onmousemove = handlerMM;
+
+// - End of JavaScript - -->
+</script>
+
+
+<body link="#3300cc" vlink="#336633"
+      onload="preloadImages(); makesnake()"
+style="OVERFLOW-X: hidden; OVERFLOW-Y: scroll; WIDTH: 100%"NOSCROL>
+
+<!--▼▼wrapper▼▼-->
+<div id="wrapper">
+
+	<!--▼▼パンくず▼▼-->
+	<p>
+	<span id="bread"><a href="indexboth.html">☆ホーム☆</a>&nbsp;＞&nbsp;<a href="index.html">★にこにこ☆イラストレーションHP★</a>&nbsp;＞&nbsp;★日本語ページ★</span>
+	</p>
+	<p class="line-dotted"><img src="images/spacer.gif" height="1" alt="."></p>
+	<!--▲▲パンくず▲▲-->
+
+
+<font size="5" color="#ffffff">.</font><b><font>いらっしゃいませ</font></b><font size="5" color="#ffffff">.</font>
+<br>
+<font size="5" color="#ffffff">.</font><b><font>藤嶋 芳(ふじしまかおる)と申します</font></b><font size="5" color="#ffffff">.</font>
+<br>
+<font size="5" color="#ffffff">.</font><b><font size="2">子供向けの本や食堂業界誌にイラストを描いております</font></b><font size="5" color="#ffffff">.</font>
+<br>
+<font size="5" color="#ffffff">.</font><b><font size="2">絵柄をいろいろ描きますので 表紙も柱も本文も</font></b><font size="5" color="#ffffff">.</font>
+<br>
+<font size="5" color="#ffffff">.</font><b><font size="2">雑誌･書籍 一冊分まるごとの挿し絵を</font></b><font size="5" color="#ffffff">.</font>
+<br>
+<font size="5" color="#ffffff">.</font><b><font size="2">うけたまわることが出来ます</font></b><font size="5" color="#ffffff">.</font>
+
+<br>
+<br>
+<table width="245" border="5" cellspacing="0" cellpadding="0" bordercolorlight="#8D8151" bordercolordark="#8D8151" background="images/cake.jpg" style="margin:auto;">
+<tr align="center" valign="bottom">
+<td height="254">
+<p>
+<a href="niko02j.html"><b><font size="2">作品ツアーは こちらからどうぞ</font></b></a>
+<br>
+<br>
+</p>
+</td>
+</tr>
+</table>
+
+
+<br>
+<br>
+<a href="indexe.html"><b><font size="3">English version</font></b></a>
+
+
+
+<br>
+<br>
+<a name="listtop"></a>
+		
+		<h3>☆作品一覧☆</h3>
+		<table width="74" cellspacing="0" cellpadding="0" style="margin:auto;">
+		<tr>
+		 <td class="borderniko"><a href="niko02j.html"><img src="images/zmarbles.jpg" alt="02 Gareth Stevens社/絵本" border="0" width="37" height="44" title="02 Gareth Stevens社/絵本"></a>
+			</td>
+		 <td><img src="images/spacer.gif" alt="." border="0" width="7" height="7"></td>
+		</tr>
+		<tr>
+		 <td><img src="images/spacer.gif" alt="." border="0" width="7" height="7"></td>
+		 <td class="borderniko"><a href="niko10j.html"><img src="images/zrestaurant.jpg" alt="10 柴田書店/食堂業界誌" border="0" width="37" height="64" title="10 柴田書店/食堂業界誌"></a></td>
+		</tr>
+		<tr>
+		 <td class="borderniko"><a href="niko03j.html"><img src="images/zdaruma.jpg" alt="03 大日本図書/絵本" border="0" width="37" height="35" title="03 大日本図書/絵本"></a>
+			</td>
+		 <td><img src="images/spacer.gif" alt="." border="0" width="7" height="7"></td>
+		</tr>
+		<tr>
+		 <td><img src="images/spacer.gif" alt="." border="0" width="7" height="7"></td>
+		 <td class="borderniko"><a href="niko11j.html"><img src="images/zichiitaisui.jpg" alt="11 柴田書店/食堂業界誌" border="0" width="37" height="26" title="11 柴田書店/食堂業界誌"></a></td>
+		</tr>
+		<tr>
+		 <td class="borderniko"><a href="niko04j.html"><img src="images/zshidax.jpg" alt="04 SHIDAX/リーフレット" border="0" width="37" height="27" title="04 SHIDAX/リーフレット"></a>
+			</td>
+		 <td><img src="images/spacer.gif" alt="." border="0" width="7" height="7"></td>
+		</tr>
+		<tr>
+		 <td><img src="images/spacer.gif" alt="." border="0" width="7" height="7"></td>
+		 <td class="borderniko"><a href="niko12j.html"><img src="images/zpatissier.jpg" alt="12 柴田書店/食堂業界誌" border="0" width="37" height="72" title="12 柴田書店/食堂業界誌"></a></td>
+		</tr>
+		<tr>
+		 <td class="borderniko"><a href="niko05j.html"><img src="images/zdr.p.jpg" alt="05 日本学士会/書籍" border="0" width="37" height="25" title="05 日本学士会/書籍"></a>
+			</td>
+		 <td><img src="images/spacer.gif" alt="." border="0" width="7" height="7"></td>
+		</tr>
+		<tr>
+		 <td><img src="images/spacer.gif" alt="." border="0" width="7" height="7"></td>
+		 <td class="borderniko"><a href="niko13j.html"><img src="images/zfilles.jpg" alt="13 人物" border="0" width="37" height="51" title="13 人物"></a></td>
+		</tr>
+		<tr>
+		 <td class="borderniko"><a href="niko06j.html"><img src="images/zgakken.jpg" alt="06 学研/英語教材" border="0" width="37" height="53" title="06 学研/英語教材"></a></td>
+		 <td><img src="images/spacer.gif" alt="." border="0" width="7" height="7"></td>
+		</tr>
+		<tr>
+									<!--なんだこれ？-->
+		 <td><img src="images/spacer.gif" alt="." border="0" width="7" height="7"></td>
+		 <td class="borderniko"><a href="niko14j.html"><img src="images/zfrance.jpg" alt="14 柴田書店/食堂業界誌" border="0" width="37" height="40" title="14 柴田書店/食堂業界誌"></a></td>
+		</tr>
+		<tr>
+		 <td class="borderniko"><a href="niko07j.html"><img src="images/za_man.jpg" alt="07 人物" border="0" width="37" height="57" title="07 人物"></a>
+			</td>
+		 <td><img src="images/spacer.gif" alt="." border="0" width="7" height="7"></td>
+		</tr>
+		<tr>
+		 <td><img src="images/spacer.gif" alt="." border="0" width="7" height="7"></td>
+		 <td class="borderniko"><a href="niko15j.html"><img src="images/zkamado.jpg" alt="15 柴田書店/食堂業界誌" border="0" width="37" height="55" title="15 柴田書店/食堂業界誌"></a></td>
+		</tr>
+		<tr>
+		 <td class="borderniko"><a href="niko08j.html"><img src="images/zos_9.jpg" alt="08 マイクロウェア/雑誌広告" border="0" width="37" height="57" title="08 マイクロウェア/雑誌広告"></a></td>
+		 <td><img src="images/spacer.gif" alt="." border="0" width="7" height="7"></td>
+		</tr>
+		<tr>
+		 <td><img src="images/spacer.gif" alt="." border="0" width="7" height="7"></td>
+		 <td class="borderniko"><a href="niko16j.html"><img src="images/zhitotoki.jpg" alt="16 柴田書店/食堂業界誌" border="0" width="37" height="35" title="16 柴田書店/食堂業界誌"></a></td>
+		</tr>
+		<tr>
+		 <td class="borderniko"><a href="niko09j.html"><img src="images/ztakasago.jpg" alt="09 山中正吉商店/ラベルデザイン" border="0" width="37" height="53" title="09 山中正吉商店/ラベルデザイン"></a></td>
+		 <td><img src="images/spacer.gif" alt="." border="0" width="7" height="7"></td>
+		</tr>
+		<tr>
+		 <td><img src="images/spacer.gif" alt="." border="0" width="7" height="7"></td>
+		 <td class="borderniko"><a href="niko17j.html"><img src="images/zflyer01.jpg" alt="17 東急リバブル/チラシ" border="0" width="37" height="53" title="17 東急リバブル/チラシ"></a></td>
+		</tr>
+		<tr>
+		 <td class="borderniko"><a href="niko01j.html"><img src="images/zleih_mir.jpg" alt="おまけのウィンク" border="0" width="37" height="26" title="おまけのウィンク"></a></td>
+		 <td><img src="images/spacer.gif" alt="." border="0" width="7" height="7"></td>
+		</tr>
+		<tr>
+		 <td><img src="images/spacer.gif" alt="." border="0" width="7" height="7"></td>
+		 <td><img src="images/spacer.gif" alt="." border="0" width="7" height="7"></td>
+		</tr>
+		</table>
+
+
+<br>
+<a name="q">
+<b>ご訪問有難うございました</b>
+
+<br>
+<table rules="none" cellspacing="6" cellpadding="0" style="margin:auto;">
+
+<caption><font size="3"><b>よろしければ、ご感想、ご意見をお聞かせください。</b>
+<br>
+メールを頂けると嬉しいです。
+<br><a href="mailto:&#107;&#97;&#111;&#114;&#117;&#102;&#117;&#106;&#105;&#115;&#104;&#105;&#109;&#97;&#64;&#107;&#115;&#110;&#46;&#98;&#105;&#103;&#108;&#111;&#98;&#101;&#46;&#110;&#101;&#46;&#106;&#112;"><img src="images/rupm.png" width="267" height="17"></a><br><br></font></caption>
+
+ <tr>
+   <td width="245" valign="top" bgcolor="#ffffff">
+   <img src="images/hatoyama.jpg" class="borderniko"></td>
+ </tr>
+</table>
+
+<a href="indexe.html#q"><b><font size="3">English version</font></b></a>
+<br>
+
+<br>
+<a href="index.html"><b><font size="2">INDEXへ戻る</font></b></a>
+<br>
+<br>
+    <font size="5" color="#cccccc">.</font> <b><font size="2">Copyright &#169;2000
+    Kaoru Fujishima</font></b> <font size="5" color="#cccccc">.</font> <br>
+    <b><font size="1">Special thanks to Akiko Kouno &amp; Hirotaka Wakabayashi</font></b>
+    </font>
+<br>
+<br>
+
+</div>
+<!--▲▲wrapper▲▲-->
+</body>
+</html>
+

@@ -1,0 +1,568 @@
+@charset "utf-8";
+
+div.goods_info {
+/*	height : 235px; */
+	height : 435px;
+	width  : 600px;
+	margin : 0;
+	padding: 0px;
+/*	border : 1px solid #ff0000;*/
+}
+
+div.goods_name {
+	height : 20px;
+	width  : 590px;
+	margin : 0;
+	padding : 5px;
+}
+
+div.goods_img {
+	height : 180px;
+	width  : 180px;
+	margin : 0;
+	padding : 10px;
+	float  : left;
+}
+
+div.goods_detail {
+	height : 180px;
+	width  : 180px;
+	margin : 0;
+	padding : 10px;
+	float  : left;
+}
+
+div.goods_buy {
+	width  : 180px;
+	height : 180px;
+	margin : 0;
+	padding : 10px;
+	float  : right;
+}
+
+div.goods_intro {
+	height : 90px;
+	width  : 580px;
+	margin : 0px;
+	padding : 10px;
+	clear : both;
+	
+/*	display : none; */
+}
+
+div.goods_review {
+	height : 90px;
+	width  : 580px;
+	margin : 0px;
+	padding : 10px;
+	clear : both;
+	
+/*	display : none; */
+}
+
+div.goods_name p {
+	margin : 0;
+	padding : 0;
+}
+
+div.goods_img p {
+	margin  : 0;
+	padding : 0;
+}
+
+div.goods_detail p {
+	margin  : 0;
+	padding : 0;
+}
+
+div.goods_buy p {
+	margin : 0;
+	padding : 0;
+}
+
+div.goods_intro p {
+	margin : 0;
+	padding : 0;
+}
+
+div.goods_review p {
+	margin : 0;
+	padding : 0;
+}
+
+img{
+	border : 0;
+}
+
+img.goods_img_detail{
+	height : 190px;
+	width  : 190px;
+}
+
+
+/*--------------------------------------*/
+/* 2段組レイアウト */
+/*--------------------------------------*/
+/* 全体リンク */
+/*a{
+	color : #000080;<!--リンクの文字色-->
+}
+
+body{
+	margin : 0 auto;
+	padding : 0;
+}*/
+
+/* コンテナ */
+/*#container{
+	width : 760px;
+	margin-left : auto;
+	margin-right : auto;
+}*/
+/* ヘッダー */
+/*#header{
+	background-image: url(images/sky.jpg); 
+	background-color: #a8002f;
+	width : 760px;
+	height : 230px; 
+	height: 5em;
+}
+#header h1{
+	margin : 0;
+	padding : 0;
+	color : #ffffff;
+	padding-top : 10px;
+	padding-left : 10px;
+}
+#header p{
+	color : #ffffff;
+	font-size : 0.75em;
+	margin : 0;
+	padding : 0;
+	margin-top : 3px;
+	padding-left : 12px;
+}*/
+/* パンくずリスト */
+#bread	{
+	font-size : 0.75em;
+	margin-top : 10px;
+	margin-bottom : 10px;
+}
+/*★ここから↓藤嶋芳★★★★★★★★★★★★★★★★★★★★★★★★★*/
+
+body{
+	/*background:#f7ffd7 url(../images/bk007.jpg) repeat fixed;*/
+	background:#f7ffd7 url(../images/bk007.jpg) repeat-x fixed;
+	color:#172717;
+	font-family:"Trebuchet MS", "osaka", "メイリオ", sans-serif;
+	/*align:justify;*/
+	line-height:1.25em;
+	direction:rtl;
+}
+
+/*600px以下の小っちゃい画面用*/
+@media screen and (max-width: 600px){
+	body{
+		font-size: 3.5vw;
+	}
+	#header{
+		width: auto;
+		justify-content: space-around;
+	}
+	h1{
+		font-size: 7vw;
+	}
+	h2{
+		font-size: 6vw;
+	}
+	h3{
+		font-size: 5vw;
+	}
+}
+
+#wrapper{
+	/*background-color:#888888;*/
+	text-align:center;
+	width:700px;
+	margin:auto;
+	/*border:2px solid #00ffff;*/
+}
+#header{
+	background-color:#687a78;
+	width:704px;
+	text-align:center;
+	/*padding:2px;*/
+	/*border:2px solid #0000ff;*/
+}
+#contents{
+	width:100%;
+	background:url(../images/000back.png) repeat-x;
+	/*margin-left:auto;*/
+	/*margin-right:auto;*/
+	/*background-color:#ffdddd;*/
+	border:2px solid #687a78;
+}
+#garage{
+	width:100%;
+	color:#003817;
+	/*line-height:1.5em;*/
+	background:#f7ffd7 url(../images/000backw_anim.gif) no-repeat;
+	/*background:#cfd8d7 url(../images/000back_v.png) repeat-x;*/
+	/*★background-color:#4718aa;★*/
+	text-align:left;
+	/*padding:3px;*/
+	clear:both;
+	/*border-top:thin dotted #373717;*/
+	border:2px solid #007800;
+	/*border-bottom:thick solid #373717;*/
+}
+
+#left_content{
+	width:17%;
+	float:left;
+	margin-top:43px;
+	text-align:center;
+	/*background-color:#eee7f8;*/
+	border-right:4px dotted #a8bab8;
+}
+#right_content{
+	width:80%;
+	float:right;
+	text-align:center;
+	/*background-color:#ddeeee;*/
+	/*border:2px solid #ff00ff;*/
+}
+
+#footer{
+	width:100%;
+	color:#888800;
+	/*background-color:#aa0808;*/
+	text-align:center;
+	padding:3px;
+	clear:both;
+	/*border:thick dotted #373717;*/
+}
+
+a:link{	
+	color:#b80038;
+	font-size:small;
+	font-weight:bold;
+	text-decoration:none;
+}
+a:visited{
+	color:#008888;
+	font-size:small;
+	font-weight:bold;
+	text-decoration:none;
+}
+a:active{
+	color:#b8c800;
+	font-size:small;
+	font-weight:bold;
+	text-decoration:none;
+}
+p img{
+	float:left;
+	text-align:left;
+	font-size:small;
+	padding:12px;
+	/*width:240px;	
+	height:178px;*/
+	color:#ff0007;
+}
+table{
+	border-collapse:collapse;
+}
+td{
+	text-align:left;
+}
+
+h1{
+	text-align:center;
+	color:#ffffa8;
+	font-size:115%;
+	margin-top:0;
+	padding:4px;
+	margin-bottom:0;
+}
+h2{
+	/*color:#070818;*/
+	text-align:center;
+	padding:2px;
+	margin-top:0.3em;
+	margin-bottom:1.6em;
+	font-size:106%;
+}
+h3{
+	/*text-align:center;*/
+	color:#b80038;
+	/*color:#008800;*/
+	/*color:#2700d8;*/
+	font-size:88%;
+	/*margin-top:1em;*/
+	margin-bottom:0.3em;
+}
+
+.detail{
+	width:98%;
+	float:right;
+	text-align:left;
+	font-size:88%;
+	padding:3px;
+	line-height:115%;
+	/*background-color:#ddeeee;*/
+	/*border:2px solid #ff8800;*/
+}
+.illust{
+	/*width:98%;*/
+	/*float:right;*/
+	text-align:center;
+	font-size:88%;
+	/*padding:3px;*/
+	/*line-height:115%;*/
+	/*background-color:#ffcccc;*/
+}
+.borderniko{
+	border:1px solid #687a78;
+}
+.borderniko2{
+	border:2px solid #687a78;
+}
+
+/* clearfix */ 
+.clearfix:after{  
+visibility: hidden;  
+display: block;  
+font-size: 0;  
+content: " ";  
+clear: both;  
+height: 0; 
+}  
+/* IE6 */ 
+* html .clearfix { zoom: 1;
+}  
+/* IE7 */ 
+*:first-child+html .clearfix { zoom: 1;
+} 
+
+.img_v{
+	width:178px;	
+	height:240px;
+}
+.img_h{
+	width:240px;	
+	height:178px;
+}
+.img_s_h{
+	width:80px;	
+	height:60px;
+	text-align:center;
+	vertical-align:top;
+}
+.img_btn_s{
+	width:43px;	
+	height:43px;
+	text-align:center;
+	vertical-align:top;
+}
+
+.exp{
+	font-size:small;
+	padding:3px;
+	/*color:#b80007;*/
+	line-height:115%;
+}
+.img_exp_l{
+	font-size:x-small;
+	padding:3px;
+	text-align:left;
+	line-height:1em;
+	vertical-align:middle;
+}
+.img_exp_r{
+	font-size:x-small;
+	padding:3px;
+	text-align:right;
+	line-height:1em;
+	vertical-align:middle;
+}
+.exp_menu1{
+	font-size:x-small;
+	color:#ffff00;
+	background-color:#a8bab8;
+	text-align:center;
+	line-height:1.6em;
+	vertical-align:middle;
+}
+.exp_menu2{
+	font-size:x-small;
+	color:#f7ffd7;
+	background-color:#687a78;
+	text-align:center;
+	line-height:1.6em;
+	vertical-align:middle;
+}
+.exp_menu3{
+	font-size:x-small;
+	background-color:#f7ffd7;
+	text-align:center;
+	line-height:1.25em;
+	vertical-align:middle;
+	padding:6px;
+	/*border-top:2px solid #a7b7a7;*/
+	/*border-bottom:2px solid #a7b7a7;*/
+}
+.exp_menu4{
+	font-size:x-small;
+	background-color:#d8e8d8;
+	text-align:center;
+	line-height:1.25em;
+	vertical-align:middle;
+	padding:6px;
+	/*border-top:2px solid #a7b7a7;*/
+	/*border-bottom:2px solid #a7b7a7;*/
+}
+.exp_special{
+	padding:3px;
+	/*color:#b80007;*/
+	font-weight:bold;
+	line-height:115%;
+}
+
+.shopping{
+	width:98%;
+	text-align:left;
+	font-size:88%;
+	line-height:115%;
+	/*background-color:#ddeeee;*/
+	border:2px solid #ff00ff;
+}
+
+.dummy{
+	padding:7px;
+	clear:both;
+}
+.line-dotted{
+	border-top:3px dotted #687a78;
+}
+
+/*▼とても大事▼*/
+div, h1, h2, h3, p, span, table, tr, td, ul, ol, li, a{
+	direction: ltr;
+	!important;
+}
+/*▲とても大事▲*/
+
+
+select{
+	font-size:xx-small;
+	margin-left:3px;
+}
+
+.aiueo{
+	font-size:xx-small;
+	margin-left:3px;
+	background:-webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.5)), to(rgba(255,128,214,0.5)));
+	background:-moz-linear-gradient(top, rgba(255,255,255,0.3), #d47);
+	/*★↑グラデーションの方向、始まりの色、終わりの色、透過のパーセント★*/
+	/*width:10em;*/
+	color:#8833dd;
+	font-size:1em;
+	font-weight:bold;
+	text-align:center;
+	line-height:2em;
+	text-shadow:5px 2px 8px #880033;
+	border-radius:10px;
+	/*★↑横方向のズレ、縦方向のズレ、ぼかしの半径★*/
+	-moz-box-shadow:2px 2px 3px #330088;
+	/*★2011年現在、PC用には、Firefox向けのこんなのも入れておく★*/
+}
+
+/*★大木先生のCSS
+.all{
+	width:100%;
+	font-size:xx-small;
+}
+
+.header{
+	text-align:center;
+}
+
+.contents{
+	border:1px solid #373717;
+}
+
+.content_head{
+	background-color:#218fff;
+	color:#ffffff;
+	text-align:center;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.content_body{
+	background-color:#fffcc7;
+	border-top:1px solid #373717;
+	border-bottom:1px solid #373717;
+}
+
+.content_footer{
+	text-align:center;
+}
+
+.check{
+	color:#ff0101;
+}
+
+.item{
+	color:#1276ff;
+}
+
+.link{
+	background-color:#ccfcfe;
+	color:#0100e8;
+}
+
+.footer{
+	text-align:center;
+	color:#ff2979;
+}
+
+a:link#blue{	
+color:#0100e8;	
+}
+
+a:visited#blue{
+color:#0100e8;
+}
+
+大木先生のCSS★*/
+
+/*★★★★★★★
+
+p{
+background-color:#FF0000;
+width:100%;
+text-align:center;
+}
+
+a{	
+	font-size:x-small;
+	}
+	
+span{
+	color:#373717;
+	line-height:20px;
+	font-size:xx-small;
+	}
+
+table,tr,td{
+	
+	width:100%;
+	border:1px solid #373717;
+	}	
+
+.finding{
+	background-color:#FF0000;
+}
+★★★★★★★*/
