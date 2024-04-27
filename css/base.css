@@ -171,6 +171,7 @@ body{
 	}
 	h1{
 		font-size: 7vw;
+		;
 	}
 	h2{
 		font-size: 6vw;
@@ -183,7 +184,7 @@ body{
 #wrapper{
 	/*background-color:#888888;*/
 	text-align:center;
-	width:700px;
+	width:88%;
 	margin:auto;
 	/*border:2px solid #00ffff;*/
 }
@@ -444,6 +445,27 @@ height: 0;
 }
 .line-dotted{
 	border-top:3px dotted #687a78;
+}
+
+.visually-hidden {
+  position: fixed !important;
+  /* keep it on viewport */
+  top: 0px !important;
+  left: 0px !important;
+  /* give it non-zero size, VoiceOver on Safari requires at least 2 pixels
+     before allowing buttons to be activated. */
+  width: 3px !important;
+  height: 3px !important;
+  /* visually hide it with overflow and opacity */
+  opacity: 0 !important;
+  overflow: hidden !important;
+  /* remove any margin or padding */
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  /* ensure no other style sets display to none */
+  display: block !important;
+  visibility: visible !important;
 }
 
 /*▼とても大事▼*/
