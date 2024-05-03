@@ -190,8 +190,7 @@ body{
 }
 #header{
 	background-color:#687a78;
-	width:704px;
-	text-align:center;
+	/*width:88%;*/
 	/*padding:2px;*/
 	/*border:2px solid #0000ff;*/
 }
@@ -207,10 +206,10 @@ body{
 	width:100%;
 	color:#003817;
 	/*line-height:1.5em;*/
-	background:#f7ffd7 url(../images/000backw_anim.gif) no-repeat;
+	background:#f7ffd7 url(../images/000backw_anim.gif) repeat-x;
 	/*background:#cfd8d7 url(../images/000back_v.png) repeat-x;*/
 	/*★background-color:#4718aa;★*/
-	text-align:left;
+	text-align:center;
 	/*padding:3px;*/
 	clear:both;
 	/*border-top:thin dotted #373717;*/
