@@ -350,17 +350,20 @@ a {
 }
 .grid-col3 > .grid-left {
   width: calc((90% - 115px) / 2);
+  list-style: none;
   padding: 3px;
   text-align: right;
 }
 .grid-col3 > .grid-center {
   width: 115px;
   height: auto;
+  list-style: none;
   text-align: center;
 }
 .grid-col3 > .grid-right {
   padding: 7px;
   width: calc((110% - 115px) / 2);
+  list-style: none;
   text-align: left;
 }
 
