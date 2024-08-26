@@ -1,53 +1,56 @@
 @charset "utf-8";
-/*
-★ここから↓藤嶋芳★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
-*/
-
-#garage {
-  width: 100%;
-  color: #003817;
-  background: #f7ffd7 url(../images/000backw_anim.gif) repeat-x;
-  text-align: center;
-  clear: both;
-  border: 2px solid #007800;
-}
 
 body {
   background: #f7ffd7 url(../images/bk007.jpg) repeat fixed;
+  line-height: 1.25em;
   direction: rtl;
   color: #172717;
+  /* color: #f7c; */
   font-family: "Trebuchet MS", "osaka", "メイリオ", sans-serif;
-  line-height: 1.25em;
 }
 
 /*
-600px以下の小っちゃい画面用
+600px以下の小っちゃいデバイス
 */
 @media screen and (max-width: 768px) {
   body {
-    font-size: 3.5vw;
+    text-align: center;
+    font-size: 2.5vw;
   }
-  #header {
+  /* #header {
     width: auto;
     justify-content: space-around;
   }
   h1 {
-    font-size: 7vw;
+    font-size: 3.5em;
   }
   h2 {
-    font-size: 6vw;
+    font-size: 2.5vw;
   }
   h3 {
-    font-size: 5vw;
-  }
+    font-size: 1.5vw;
+  } */
 }
 
+#body-illust {
+  /* background-image: url("../images/leih_mir_bw.jpg") repeat-x fixed, url("../images/bk007.jpg") repeat fixed;*/
+  background: url("../images/leih_mir_bw.jpg") repeat-x fixed,
+    url("../images/bk007.jpg") repeat fixed;
+  /* background-image: url(../images/bk007.jpg) repeat fixed, url(../images/leih_mir_bw.jpg); */
+  line-height: 1.25em;
+  direction: rtl;
+  color: #172717;
+  /*color: #f7c;*/
+  font-family: "Trebuchet MS", "osaka", "メイリオ", sans-serif;
+}
+
+/*
+周り77％カコミ
+*/
 #wrapper {
-  /*background-color:#888888;*/
   text-align: center;
-  width: 70%;
+  width: 77%;
   margin: auto;
-  /*border:2px solid #00ffff;*/
 }
 
 /*
@@ -59,6 +62,9 @@ body {
   margin-bottom: 10px;
 }
 
+/*
+headerとかnavigationとか
+*/
 #header {
   background-color: #687a78;
   /*width:100%;*/
@@ -68,13 +74,20 @@ body {
   /*border:2px solid #0000ff;*/
 }
 
+#nav-vertical {
+  margin: 0 7vh;
+  text-align: center;
+}
+
+#nav-left {
+  margin: 0 7vh;
+  text-align: center;
+}
+
 #contents {
   width: 100%;
   background: url(../images/000back.png) repeat-x;
   margin: 5 0 0 10;
-  /*margin-left:auto;*/
-  /*margin-right:auto;*/
-  /*background-color:#ffdddd;*/
   border: 2px solid #687a78;
 }
 
@@ -107,26 +120,22 @@ body {
 
 a:link {
   color: #b80038;
-  font-size: small;
+  font-size: 90%;
   font-weight: bold;
   /*text-decoration:none;*/
 }
 a:visited {
-  color: #008888;
-  font-size: small;
-  font-weight: bold;
+  color: #770297;
   /*text-decoration:none;*/
 }
 a:active {
-  color: #b8c800;
-  font-size: small;
-  font-weight: bold;
+  color: #088;
   /*text-decoration:none;*/
 }
 p img {
-  float: left;
+  /* float: left; */
   text-align: left;
-  font-size: small;
+  font-size: 1em;
   padding: 12px;
   /*width:240px;	
 	height:178px;*/
@@ -147,6 +156,7 @@ h1 {
   padding: 4px;
   margin-bottom: 0;
 }
+
 h2 {
   /*color:#070818;*/
   text-align: center;
@@ -156,11 +166,11 @@ h2 {
   font-size: 106%;
 }
 h3 {
-  /*text-align:center;*/
+  text-align: center;
   color: #b80038;
   /*color:#008800;*/
   /*color:#2700d8;*/
-  font-size: 88%;
+  font-size: 100%;
   /*margin-top:1em;*/
   margin-bottom: 0.3em;
 }
@@ -172,17 +182,10 @@ h3 {
   font-size: 88%;
   padding: 3px;
   line-height: 115%;
-  /*background-color:#ddeeee;*/
-  /*border:2px solid #ff8800;*/
 }
 .illust {
-  /*width:98%;*/
-  /*float:right;*/
   text-align: center;
   font-size: 88%;
-  /*padding:3px;*/
-  /*line-height:115%;*/
-  /*background-color:#ffcccc;*/
 }
 .borderniko {
   border: 1px solid #687a78;
@@ -209,6 +212,20 @@ h3 {
   zoom: 1;
 }
 
+.grandtour {
+  margin: auto;
+  /*align-items: center;*/
+  border-collapse: collapse;
+  border: solid thick #a7a757;
+  border-right-color: #687a08;
+  border-bottom-color: #687a08;
+  text-align: center;
+  font-size: 100%;
+  line-height: 1.15em;
+  padding: 2%;
+  background-image: url(../images/cake.jpg);
+}
+
 .img_v {
   width: 178px;
   height: 240px;
@@ -231,21 +248,21 @@ h3 {
 }
 
 .exp {
-  font-size: small;
   padding: 3px;
-  /*color:#b80007;*/
+  font-size: small;
   line-height: 115%;
 }
+
 .img_exp_l {
-  font-size: x-small;
   padding: 3px;
+  font-size: x-small;
   text-align: left;
   line-height: 1em;
   vertical-align: middle;
 }
 .img_exp_r {
-  font-size: x-small;
   padding: 3px;
+  font-size: x-small;
   text-align: right;
   line-height: 1em;
   vertical-align: middle;
@@ -267,26 +284,26 @@ h3 {
   vertical-align: middle;
 }
 .exp_menu3 {
+  padding: 6px;
   font-size: x-small;
   background-color: #f7ffd7;
   text-align: center;
   line-height: 1.25em;
   vertical-align: middle;
-  padding: 6px;
 }
 .exp_menu4 {
+  padding: 6px;
   font-size: x-small;
   background-color: #d8e8d8;
   text-align: center;
   line-height: 1.25em;
   vertical-align: middle;
-  padding: 6px;
 }
 .exp_special {
   padding: 3px;
   font-weight: bold;
-  font-size: 88%;
-  line-height: 115%;
+  font-size: x-small;
+  line-height: 1.8em;
 }
 
 .shopping {
@@ -306,6 +323,7 @@ h3 {
 }
 
 /*▼とても大事▼*/
+nav,
 section,
 article,
 div,
@@ -330,32 +348,32 @@ a {
 */
 .grid-col3 {
   display: flex;
-  margin: 7px 25px;
+  margin: auto;
   list-style: none;
-  font-size: small;
   line-height: 1.25em;
   color: #077707;
 }
-.grid-col3 > .grid-left {
+.grid-left {
   width: calc((90% - 115px) / 2);
+  line-height: 1.51em;
   list-style: none;
   padding-top: 5px;
-  padding-right: 3px;
+  padding-right: 5px;
   text-align: right;
 }
-.grid-col3 > .grid-center {
+.grid-center {
   width: 115px;
   height: auto;
+  vertical-align: bottom;
   padding: 0;
   list-style: none;
   text-align: center;
 }
-.grid-col3 > .grid-right {
+.grid-right {
   padding-left: 7px;
   width: calc((110% - 115px) / 2);
   list-style: none;
-  padding-top: 5px;
-  font-size: small;
+  padding-top: 0;
   line-height: 1.6em;
   text-align: left;
 }
@@ -370,21 +388,51 @@ a {
   .grid-col3 > .grid-center,
   .grid-col3 > .grid-right {
     margin: 2px;
-    line-height: 1.15em;
+    line-height: 1.6em;
     width: 100%;
     text-align: center;
-    line-height: 1.51em;
   }
 }
 
+/*
+図絵
+*/
 .figure {
   text-align: center;
   border: 0;
 }
 
-select {
+/*
+text
+*/
+.emphasis {
+  font-weight: bold;
+}
+
+/*
+きょろ眼のtable
+*/
+.td-left {
+  text-align: left;
+  width: 65%;
+}
+.td-right {
+  text-align: right;
+  width: 35%;
+}
+
+.select {
   font-size: xx-small;
   margin-left: 3px;
+}
+
+#garage {
+  width: 100%;
+  color: #003817;
+  background: #f7ffd7 url(../images/000backw_anim.gif) repeat-x;
+  text-align: center;
+  clear: both;
+  border: 2px solid #007800;
 }
 
 .aiueo {
