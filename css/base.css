@@ -4,8 +4,7 @@ body {
   background: #f7ffd7 url(../images/bk007.jpg) repeat fixed;
   line-height: 1.25em;
   direction: rtl;
-  color: #172717;
-  /* color: #f7c; */
+  color: #687a78;
   font-family: "Trebuchet MS", "osaka", "メイリオ", sans-serif;
 }
 
@@ -17,21 +16,11 @@ body {
     text-align: center;
     font-size: 2.5vw;
   }
-  /* #header {
-    width: auto;
-    justify-content: space-around;
-  }
-  h1 {
-    font-size: 3.5em;
-  }
-  h2 {
-    font-size: 2.5vw;
-  }
-  h3 {
-    font-size: 1.5vw;
-  } */
 }
 
+/*
+index日本語index英語のbody
+*/
 #body-illust {
   /* background-image: url("../images/leih_mir_bw.jpg") repeat-x fixed, url("../images/bk007.jpg") repeat fixed;*/
   background: url("../images/leih_mir_bw.jpg") repeat-x fixed,
@@ -39,7 +28,7 @@ body {
   /* background-image: url(../images/bk007.jpg) repeat fixed, url(../images/leih_mir_bw.jpg); */
   line-height: 1.25em;
   direction: rtl;
-  color: #172717;
+  /* color: #172717; */
   /*color: #f7c;*/
   font-family: "Trebuchet MS", "osaka", "メイリオ", sans-serif;
 }
@@ -87,7 +76,7 @@ headerとかnavigationとか
 #contents {
   width: 100%;
   background: url(../images/000back.png) repeat-x;
-  margin: 5 0 0 10;
+  margin: 5 0 16 10;
   border: 2px solid #687a78;
 }
 
@@ -125,7 +114,7 @@ a:link {
   /*text-decoration:none;*/
 }
 a:visited {
-  color: #770297;
+  color: #7702c7;
   /*text-decoration:none;*/
 }
 a:active {
@@ -168,11 +157,14 @@ h2 {
 h3 {
   text-align: center;
   color: #b80038;
-  /*color:#008800;*/
-  /*color:#2700d8;*/
   font-size: 100%;
   /*margin-top:1em;*/
   margin-bottom: 0.3em;
+}
+
+p,
+caption {
+  color: #687a78;
 }
 
 .detail {
@@ -194,7 +186,9 @@ h3 {
   border: 2px solid #687a78;
 }
 
-/* clearfix */
+/*
+clearfix
+*/
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -224,6 +218,27 @@ h3 {
   line-height: 1.15em;
   padding: 2%;
   background-image: url(../images/cake.jpg);
+  /* box-shadow: 7px 5px 30% #687a08; */
+}
+
+/* .grandtour:hover {
+  box-shadow: 7px 5px 30% #7ca;
+} */
+
+/*
+aria-hiddenの読み上げのみ
+*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border-width: 0;
 }
 
 .img_v {
@@ -344,11 +359,13 @@ a {
 /*▲とても大事▲*/
 
 /*
-表紙の元table
+表紙のcafelefthandedのtable
 */
+
 .grid-col3 {
   display: flex;
   margin: auto;
+  padding-top: 24px;
   list-style: none;
   line-height: 1.25em;
   color: #077707;
@@ -382,7 +399,7 @@ a {
   .grid-col3 {
     display: block;
     font-size: small;
-    margin: 7px;
+    margin: 1px;
   }
   .grid-col3 > .grid-left,
   .grid-col3 > .grid-center,
