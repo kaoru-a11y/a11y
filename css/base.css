@@ -46,7 +46,7 @@ index日本語index英語のbody
 パンくずリスト
 */
 #bread {
-  font-size: 0.75em;
+  font-size: 0.88em;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -210,15 +210,12 @@ clearfix
   margin: auto;
   /*align-items: center;*/
   border-collapse: collapse;
-  border: solid thick #a7a757;
-  border-right-color: #687a08;
-  border-bottom-color: #687a08;
+  border: solid thick #687a08;
   text-align: center;
   font-size: 100%;
   line-height: 1.15em;
   padding: 2%;
   background-image: url(../images/cake.jpg);
-  /* box-shadow: 7px 5px 30% #687a08; */
 }
 
 /* .grandtour:hover {
@@ -264,13 +261,13 @@ aria-hiddenの読み上げのみ
 
 .exp {
   padding: 3px;
-  font-size: small;
+  font-size: 97%;
   line-height: 115%;
 }
 
 .img_exp_l {
   padding: 3px;
-  font-size: x-small;
+  font-size: small;
   text-align: left;
   line-height: 1em;
   vertical-align: middle;
@@ -361,7 +358,6 @@ a {
 /*
 表紙のcafelefthandedのtable
 */
-
 .grid-col3 {
   display: flex;
   margin: auto;
@@ -398,13 +394,13 @@ a {
 @media screen and (max-width: 768px) {
   .grid-col3 {
     display: block;
-    font-size: small;
-    margin: 1px;
+    /* font-size: small; */
+    margin: 7px;
   }
   .grid-col3 > .grid-left,
   .grid-col3 > .grid-center,
   .grid-col3 > .grid-right {
-    margin: 2px;
+    margin: 24px 2px 0 2px;
     line-height: 1.6em;
     width: 100%;
     text-align: center;
@@ -416,6 +412,8 @@ a {
 */
 .figure {
   text-align: center;
+  justify-content: center;
+  margin: 0% auto;
   border: 0;
 }
 
