@@ -389,20 +389,28 @@ a {
   padding-top: 0;
   line-height: 1.6em;
   text-align: left;
+  align-items: center;
 }
 
 @media screen and (max-width: 768px) {
   .grid-col3 {
+    margin: auto;
+    text-align: center;
+    list-style: none;
+    width: 100%;
     display: block;
-    /* font-size: small; */
-    margin: 7px;
+    font-size: 100%;
+    align-items: center;
+    /* margin: 24px; */
   }
   .grid-col3 > .grid-left,
   .grid-col3 > .grid-center,
   .grid-col3 > .grid-right {
-    margin: 24px 2px 0 2px;
-    line-height: 1.6em;
+    list-style: none;
     width: 100%;
+    padding-left: 0;
+    margin: auto;
+    line-height: 1.6em;
     text-align: center;
   }
 }
@@ -412,6 +420,7 @@ a {
 */
 .figure {
   text-align: center;
+  align-items: center;
   justify-content: center;
   margin: 0% auto;
   border: 0;
@@ -437,7 +446,7 @@ text
 }
 
 .select {
-  font-size: xx-small;
+  font-size: small;
   margin-left: 3px;
 }
 

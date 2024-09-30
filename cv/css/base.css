@@ -46,7 +46,7 @@ index日本語index英語のbody
 パンくずリスト
 */
 #bread {
-  font-size: 0.75em;
+  font-size: 0.88em;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -76,7 +76,7 @@ headerとかnavigationとか
 #contents {
   width: 100%;
   background: url(../images/000back.png) repeat-x;
-  margin: 5 0 0 10;
+  margin: 5 0 16 10;
   border: 2px solid #687a78;
 }
 
@@ -210,15 +210,12 @@ clearfix
   margin: auto;
   /*align-items: center;*/
   border-collapse: collapse;
-  border: solid thick #a7a757;
-  border-right-color: #687a08;
-  border-bottom-color: #687a08;
+  border: solid thick #687a08;
   text-align: center;
   font-size: 100%;
   line-height: 1.15em;
   padding: 2%;
   background-image: url(../images/cake.jpg);
-  /* box-shadow: 7px 5px 30% #687a08; */
 }
 
 /* .grandtour:hover {
@@ -264,13 +261,13 @@ aria-hiddenの読み上げのみ
 
 .exp {
   padding: 3px;
-  font-size: small;
+  font-size: 97%;
   line-height: 115%;
 }
 
 .img_exp_l {
   padding: 3px;
-  font-size: x-small;
+  font-size: small;
   text-align: left;
   line-height: 1em;
   vertical-align: middle;
@@ -364,6 +361,7 @@ a {
 .grid-col3 {
   display: flex;
   margin: auto;
+  padding-top: 24px;
   list-style: none;
   line-height: 1.25em;
   color: #077707;
@@ -396,13 +394,13 @@ a {
 @media screen and (max-width: 768px) {
   .grid-col3 {
     display: block;
-    font-size: small;
+    font-size: 100%;
     margin: 7px;
   }
   .grid-col3 > .grid-left,
   .grid-col3 > .grid-center,
   .grid-col3 > .grid-right {
-    margin: 2px;
+    margin: 24px 2px 0 2px;
     line-height: 1.6em;
     width: 100%;
     text-align: center;
@@ -414,6 +412,9 @@ a {
 */
 .figure {
   text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0% auto;
   border: 0;
 }
 
@@ -437,7 +438,7 @@ text
 }
 
 .select {
-  font-size: xx-small;
+  font-size: small;
   margin-left: 3px;
 }
 
