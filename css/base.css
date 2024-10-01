@@ -211,6 +211,8 @@ clearfix
   /*align-items: center;*/
   border-collapse: collapse;
   border: solid thick #687a08;
+  width: 240px;
+  height: 258px;
   text-align: center;
   font-size: 100%;
   line-height: 1.15em;
@@ -394,7 +396,7 @@ a {
 
 @media screen and (max-width: 768px) {
   .grid-col3 {
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
     list-style: none;
     width: 100%;
@@ -409,8 +411,17 @@ a {
     list-style: none;
     width: 100%;
     padding-left: 0;
-    margin: auto;
+    margin: 0 auto;
     line-height: 1.6em;
+    text-align: left;
+  }
+  .figure,
+  ul,
+  ol,
+  li,
+  dt,
+  dd {
+    margin: 0 auto;
     text-align: center;
   }
 }
@@ -482,104 +493,4 @@ text
   /*★↑横方向のズレ、縦方向のズレ、ぼかしの半径★*/
   /*-moz-box-shadow:2px 2px 3px #330088;
 	★2011年現在、PC用には、Firefox向けのこんなのも入れておく★*/
-}
-
-/*
-cafelefthanded学校追加分とか
-*/
-div.goods_info {
-  /*	height : 235px; */
-  height: 435px;
-  width: 600px;
-  margin: 0;
-  padding: 0px;
-  /*	border : 1px solid #ff0000;*/
-}
-
-div.goods_name {
-  height: 20px;
-  width: 590px;
-  margin: 0;
-  padding: 5px;
-}
-
-div.goods_img {
-  height: 180px;
-  width: 180px;
-  margin: 0;
-  padding: 10px;
-  float: left;
-}
-
-div.goods_detail {
-  height: 180px;
-  width: 180px;
-  margin: 0;
-  padding: 10px;
-  float: left;
-}
-
-div.goods_buy {
-  width: 180px;
-  height: 180px;
-  margin: 0;
-  padding: 10px;
-  float: right;
-}
-
-div.goods_intro {
-  height: 90px;
-  width: 580px;
-  margin: 0px;
-  padding: 10px;
-  clear: both;
-  /*	display : none; */
-}
-
-div.goods_review {
-  height: 90px;
-  width: 580px;
-  margin: 0px;
-  padding: 10px;
-  clear: both;
-  /*	display : none; */
-}
-
-div.goods_name p {
-  margin: 0;
-  padding: 0;
-}
-
-div.goods_img p {
-  margin: 0;
-  padding: 0;
-}
-
-div.goods_detail p {
-  margin: 0;
-  padding: 0;
-}
-
-div.goods_buy p {
-  margin: 0;
-  padding: 0;
-}
-
-div.goods_intro p {
-  margin: 0;
-  padding: 0;
-}
-
-div.goods_review p {
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  border: 0;
-}
-
-img.goods_img_detail {
-  height: 190px;
-  width: 190px;
 }
