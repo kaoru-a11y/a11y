@@ -14,22 +14,19 @@ body {
 @media screen and (max-width: 768px) {
   body {
     text-align: center;
+    align-items: center;
     font-size: 2.5vw;
   }
 }
 
 /*
-index日本語index英語のbody
+indexjとindexeのbody
 */
 #body-illust {
-  /* background-image: url("../images/leih_mir_bw.jpg") repeat-x fixed, url("../images/bk007.jpg") repeat fixed;*/
   background: url("../images/leih_mir_bw.jpg") repeat-x fixed,
     url("../images/bk007.jpg") repeat fixed;
-  /* background-image: url(../images/bk007.jpg) repeat fixed, url(../images/leih_mir_bw.jpg); */
   line-height: 1.25em;
   direction: rtl;
-  /* color: #172717; */
-  /*color: #f7c;*/
   font-family: "Trebuchet MS", "osaka", "メイリオ", sans-serif;
 }
 
@@ -46,7 +43,7 @@ index日本語index英語のbody
 パンくずリスト
 */
 #bread {
-  font-size: 0.88em;
+  font-size: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -56,11 +53,8 @@ headerとかnavigationとか
 */
 #header {
   background-color: #687a78;
-  /*width:100%;*/
   text-align: center;
   margin-bottom: 10px;
-  /*padding:2px;*/
-  /*border:2px solid #0000ff;*/
 }
 
 #nav-vertical {
@@ -75,9 +69,20 @@ headerとかnavigationとか
 
 #contents {
   width: 100%;
+  text-align: center;
+  align-items: center;
   background: url(../images/000back.png) repeat-x;
-  margin: 5 0 16 10;
+  margin: 0 auto;
   border: 2px solid #687a78;
+}
+
+@media screen and (max-width: 768px) {
+  #contents {
+    width: 97%;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+  }
 }
 
 #left_content {
@@ -211,6 +216,8 @@ clearfix
   /*align-items: center;*/
   border-collapse: collapse;
   border: solid thick #687a08;
+  width: 240px;
+  height: 258px;
   text-align: center;
   font-size: 100%;
   line-height: 1.15em;
@@ -362,6 +369,7 @@ a {
   display: flex;
   margin: auto;
   padding-top: 24px;
+  align-items: center;
   list-style: none;
   line-height: 1.25em;
   color: #077707;
@@ -373,6 +381,7 @@ a {
   padding-top: 5px;
   padding-right: 5px;
   text-align: right;
+  align-items: center;
 }
 .grid-center {
   width: 115px;
@@ -381,6 +390,7 @@ a {
   padding: 0;
   list-style: none;
   text-align: center;
+  align-items: center;
 }
 .grid-right {
   padding-left: 7px;
@@ -389,21 +399,40 @@ a {
   padding-top: 0;
   line-height: 1.6em;
   text-align: left;
+  align-items: center;
 }
 
 @media screen and (max-width: 768px) {
   .grid-col3 {
     display: block;
+    margin: 0 auto;
+    padding-right: 3em;
+    text-align: center;
+    list-style: none;
+    width: 100%;
     font-size: 100%;
-    margin: 7px;
+    align-items: center;
   }
   .grid-col3 > .grid-left,
   .grid-col3 > .grid-center,
   .grid-col3 > .grid-right {
-    margin: 24px 2px 0 2px;
-    line-height: 1.6em;
+    display: block;
     width: 100%;
+    /* padding-left: 0; */
+    margin: 0 auto;
+    line-height: 1.6em;
     text-align: center;
+  }
+  .figure,
+  ul,
+  ol,
+  li,
+  dt,
+  dd {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
   }
 }
 
@@ -412,10 +441,49 @@ a {
 */
 .figure {
   text-align: center;
+  display: block;
   align-items: center;
   justify-content: center;
-  margin: 0% auto;
+  margin: 0 auto;
   border: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .figure {
+    width: 97%;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
+/*
+card 
+*/
+.card {
+  width: 100%;
+  display: flex;
+  list-style: none;
+}
+.card-2 {
+  width: 50%;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+    display: block;
+  }
+  .card-2 {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-top: 16px;
+    list-style: none;
+  }
 }
 
 /*
@@ -474,104 +542,4 @@ text
   /*★↑横方向のズレ、縦方向のズレ、ぼかしの半径★*/
   /*-moz-box-shadow:2px 2px 3px #330088;
 	★2011年現在、PC用には、Firefox向けのこんなのも入れておく★*/
-}
-
-/*
-cafelefthanded学校追加分とか
-*/
-div.goods_info {
-  /*	height : 235px; */
-  height: 435px;
-  width: 600px;
-  margin: 0;
-  padding: 0px;
-  /*	border : 1px solid #ff0000;*/
-}
-
-div.goods_name {
-  height: 20px;
-  width: 590px;
-  margin: 0;
-  padding: 5px;
-}
-
-div.goods_img {
-  height: 180px;
-  width: 180px;
-  margin: 0;
-  padding: 10px;
-  float: left;
-}
-
-div.goods_detail {
-  height: 180px;
-  width: 180px;
-  margin: 0;
-  padding: 10px;
-  float: left;
-}
-
-div.goods_buy {
-  width: 180px;
-  height: 180px;
-  margin: 0;
-  padding: 10px;
-  float: right;
-}
-
-div.goods_intro {
-  height: 90px;
-  width: 580px;
-  margin: 0px;
-  padding: 10px;
-  clear: both;
-  /*	display : none; */
-}
-
-div.goods_review {
-  height: 90px;
-  width: 580px;
-  margin: 0px;
-  padding: 10px;
-  clear: both;
-  /*	display : none; */
-}
-
-div.goods_name p {
-  margin: 0;
-  padding: 0;
-}
-
-div.goods_img p {
-  margin: 0;
-  padding: 0;
-}
-
-div.goods_detail p {
-  margin: 0;
-  padding: 0;
-}
-
-div.goods_buy p {
-  margin: 0;
-  padding: 0;
-}
-
-div.goods_intro p {
-  margin: 0;
-  padding: 0;
-}
-
-div.goods_review p {
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  border: 0;
-}
-
-img.goods_img_detail {
-  height: 190px;
-  width: 190px;
 }
