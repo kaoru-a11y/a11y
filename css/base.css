@@ -14,22 +14,19 @@ body {
 @media screen and (max-width: 768px) {
   body {
     text-align: center;
+    align-items: center;
     font-size: 2.5vw;
   }
 }
 
 /*
-index日本語index英語のbody
+indexjとindexeのbody
 */
 #body-illust {
-  /* background-image: url("../images/leih_mir_bw.jpg") repeat-x fixed, url("../images/bk007.jpg") repeat fixed;*/
   background: url("../images/leih_mir_bw.jpg") repeat-x fixed,
     url("../images/bk007.jpg") repeat fixed;
-  /* background-image: url(../images/bk007.jpg) repeat fixed, url(../images/leih_mir_bw.jpg); */
   line-height: 1.25em;
   direction: rtl;
-  /* color: #172717; */
-  /*color: #f7c;*/
   font-family: "Trebuchet MS", "osaka", "メイリオ", sans-serif;
 }
 
@@ -46,7 +43,7 @@ index日本語index英語のbody
 パンくずリスト
 */
 #bread {
-  font-size: 0.88em;
+  font-size: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -56,11 +53,8 @@ headerとかnavigationとか
 */
 #header {
   background-color: #687a78;
-  /*width:100%;*/
   text-align: center;
   margin-bottom: 10px;
-  /*padding:2px;*/
-  /*border:2px solid #0000ff;*/
 }
 
 #nav-vertical {
@@ -75,9 +69,20 @@ headerとかnavigationとか
 
 #contents {
   width: 100%;
+  text-align: center;
+  align-items: center;
   background: url(../images/000back.png) repeat-x;
-  margin: 5 0 16 10;
+  margin: 0 auto;
   border: 2px solid #687a78;
+}
+
+@media screen and (max-width: 768px) {
+  #contents {
+    width: 97%;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+  }
 }
 
 #left_content {
@@ -208,7 +213,7 @@ clearfix
 
 .grandtour {
   margin: auto;
-  /*align-items: center;*/
+  align-items: center;
   border-collapse: collapse;
   border: solid thick #687a08;
   width: 240px;
@@ -218,6 +223,7 @@ clearfix
   line-height: 1.15em;
   padding: 2%;
   background-image: url(../images/cake.jpg);
+  overflow: hidden;
 }
 
 /* .grandtour:hover {
@@ -364,6 +370,7 @@ a {
   display: flex;
   margin: auto;
   padding-top: 24px;
+  align-items: center;
   list-style: none;
   line-height: 1.25em;
   color: #077707;
@@ -375,6 +382,7 @@ a {
   padding-top: 5px;
   padding-right: 5px;
   text-align: right;
+  align-items: center;
 }
 .grid-center {
   width: 115px;
@@ -383,6 +391,7 @@ a {
   padding: 0;
   list-style: none;
   text-align: center;
+  align-items: center;
 }
 .grid-right {
   padding-left: 7px;
@@ -396,33 +405,36 @@ a {
 
 @media screen and (max-width: 768px) {
   .grid-col3 {
+    display: block;
     margin: 0 auto;
+    padding-right: 3em;
     text-align: center;
     list-style: none;
     width: 100%;
-    display: block;
     font-size: 100%;
     align-items: center;
-    /* margin: 24px; */
   }
   .grid-col3 > .grid-left,
   .grid-col3 > .grid-center,
   .grid-col3 > .grid-right {
-    list-style: none;
+    display: block;
     width: 100%;
-    padding-left: 0;
+    /* padding-left: 0; */
     margin: 0 auto;
     line-height: 1.6em;
-    text-align: left;
+    text-align: center;
   }
   .figure,
+  div,
   ul,
   ol,
   li,
   dt,
   dd {
+    display: block;
     margin: 0 auto;
     text-align: center;
+    align-items: center;
   }
 }
 
@@ -431,10 +443,50 @@ a {
 */
 .figure {
   text-align: center;
+  display: block;
   align-items: center;
   justify-content: center;
-  margin: 0% auto;
+  margin: 0 auto;
   border: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .figure {
+    max-width: 97%;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
+/*
+card 
+*/
+.card {
+  width: 100%;
+  display: flex;
+  list-style: none;
+}
+.card-2 {
+  width: 50%;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+    display: block;
+  }
+  .card-2 {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-top: 16px;
+    list-style: none;
+  }
 }
 
 /*
