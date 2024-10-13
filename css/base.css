@@ -23,7 +23,7 @@ body {
 indexjとindexeのbody
 */
 #body-illust {
-  background: url("../images/leih_mir_bw.jpg") repeat-x fixed,
+  background: url("../images/leih_mir_bw.jpg") fixed,
     url("../images/bk007.jpg") repeat fixed;
   line-height: 1.25em;
   direction: rtl;
@@ -36,7 +36,15 @@ indexjとindexeのbody
 #wrapper {
   text-align: center;
   width: 77%;
-  margin: auto;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  #wrapper {
+    text-align: center;
+    width: 88%;
+    margin: 0 auto;
+  }
 }
 
 /*
@@ -78,10 +86,12 @@ headerとかnavigationとか
 
 @media screen and (max-width: 768px) {
   #contents {
-    width: 97%;
+    width: 100%;
     text-align: center;
     align-items: center;
+    background: url(../images/000back.png) repeat-x;
     margin: 0 auto;
+    border: 2px solid #687a78;
   }
 }
 
@@ -137,6 +147,7 @@ p img {
 }
 table {
   border-collapse: collapse;
+  text-align: center;
 }
 td {
   text-align: left;
@@ -146,9 +157,9 @@ h1 {
   text-align: center;
   color: #ffffa8;
   font-size: 115%;
-  margin-top: 0;
+  margin-top: 0 auto;
   padding: 4px;
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
 }
 
 h2 {
@@ -212,7 +223,8 @@ clearfix
 }
 
 .grandtour {
-  margin: auto;
+  display: block;
+  margin: 0 auto;
   align-items: center;
   border-collapse: collapse;
   border: solid thick #687a08;
@@ -221,7 +233,7 @@ clearfix
   text-align: center;
   font-size: 100%;
   line-height: 1.15em;
-  padding: 2%;
+  /* padding: 2%; */
   background-image: url(../images/cake.jpg);
   overflow: hidden;
 }
@@ -442,8 +454,8 @@ a {
 図絵
 */
 .figure {
-  text-align: center;
   display: block;
+  text-align: center;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
@@ -452,10 +464,12 @@ a {
 
 @media screen and (max-width: 768px) {
   .figure {
-    max-width: 97%;
-    height: auto;
+    /* position: absolute; */
+    max-width: 80%;
+    display: block;
     text-align: center;
     align-items: center;
+    justify-content: center;
     margin: 0 auto;
   }
 }
