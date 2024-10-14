@@ -383,7 +383,7 @@ a {
 .grid-col3 {
   display: flex;
   margin: auto;
-  padding-top: 24px;
+  padding-top: 16px;
   align-items: center;
   list-style: none;
   line-height: 1.25em;
@@ -421,6 +421,7 @@ a {
   .grid-col3 {
     display: block;
     margin: 0 auto;
+    padding-top: 7px;
     padding-right: 3em;
     text-align: center;
     list-style: none;
@@ -469,8 +470,8 @@ tbody {
   .figure,
   tbody {
     /* position: absolute; */
-    max-width: 88%;
-    min-width: auto;
+    max-width: 100%;
+    height: auto;
     display: block;
     text-align: center;
     align-items: center;
@@ -478,8 +479,9 @@ tbody {
     margin: 0 auto;
   }
   .figure img {
-    max-width: 125%;
+    max-width: 100%;
     min-width: auto;
+    height: auto;
   }
 }
 
@@ -489,7 +491,7 @@ section indexとかseasonとか
 article {
   text-align: center;
   display: block;
-  margin: 0;
+  margin: 0 auto;
 }
 
 /*
@@ -524,6 +526,13 @@ card
     margin: 0 auto;
     padding-top: 16px;
     list-style: none;
+  }
+  .card-2 dd img {
+    max-width: 97%;
+    min-width: auto;
+    height: auto;
+    align-items: center;
+    text-align: center;
   }
 }
 
