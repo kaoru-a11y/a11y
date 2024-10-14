@@ -42,7 +42,8 @@ indexjとindexeのbody
 @media screen and (max-width: 768px) {
   #wrapper {
     text-align: center;
-    width: 88%;
+    max-width: 95%;
+    min-width: auto;
     margin: 0 auto;
   }
 }
@@ -86,6 +87,7 @@ headerとかnavigationとか
 
 @media screen and (max-width: 768px) {
   #contents {
+    display: block;
     width: 100%;
     text-align: center;
     align-items: center;
@@ -209,7 +211,6 @@ clearfix
   visibility: hidden;
   display: block;
   font-size: 0;
-  content: " ";
   clear: both;
   height: 0;
 }
@@ -225,15 +226,16 @@ clearfix
 .grandtour {
   display: block;
   margin: 0 auto;
-  align-items: center;
+  align-items: bottom;
   border-collapse: collapse;
-  border: solid thick #687a08;
+  border: solid thin #687a08;
+  border-radius: 50%;
   width: 240px;
   height: 258px;
   text-align: center;
-  font-size: 100%;
-  line-height: 1.15em;
-  /* padding: 2%; */
+  font-size: 106%;
+  /* line-height: 1.15em; */
+  /* padding: -10px; */
   background-image: url(../images/cake.jpg);
   overflow: hidden;
 }
@@ -436,7 +438,7 @@ a {
     line-height: 1.6em;
     text-align: center;
   }
-  .figure,
+
   div,
   ul,
   ol,
@@ -453,7 +455,8 @@ a {
 /*
 図絵
 */
-.figure {
+.figure,
+tbody {
   display: block;
   text-align: center;
   align-items: center;
@@ -463,15 +466,30 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-  .figure {
+  .figure,
+  tbody {
     /* position: absolute; */
-    max-width: 80%;
+    max-width: 88%;
+    min-width: auto;
     display: block;
     text-align: center;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
   }
+  .figure img {
+    max-width: 125%;
+    min-width: auto;
+  }
+}
+
+/* 
+section indexとかseasonとか
+*/
+article {
+  text-align: center;
+  display: block;
+  margin: 0;
 }
 
 /*
@@ -492,12 +510,18 @@ card
 @media screen and (max-width: 768px) {
   .card {
     width: 100%;
+    align-items: center;
+    text-align: center;
     display: block;
+    margin: 0 auto;
+    list-style: none;
   }
   .card-2 {
     width: 100%;
     align-items: center;
     text-align: center;
+    display: block;
+    margin: 0 auto;
     padding-top: 16px;
     list-style: none;
   }
