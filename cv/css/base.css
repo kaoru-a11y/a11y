@@ -80,6 +80,7 @@ headerとかnavigationとか
   width: 100%;
   text-align: center;
   align-items: center;
+  padding-right: 10%;
   background: url(../images/000back.png) repeat-x;
   margin: 0 auto;
   border: 2px solid #687a78;
@@ -226,17 +227,17 @@ clearfix
 .grandtour {
   display: block;
   margin: 0 auto;
-  align-items: bottom;
-  border-collapse: collapse;
-  border: solid thin #687a08;
-  border-radius: 50%;
-  width: 240px;
-  height: 258px;
   text-align: center;
   font-size: 106%;
+  /* align-items: bottom; */
+  /* border-collapse: collapse; */
+  border: solid thin #687a08;
+  border-radius: 50%;
+  width: 223px;
+  height: 223px;
   /* line-height: 1.15em; */
   /* padding: -10px; */
-  background-image: url(../images/cake.jpg);
+  background-image: url(../images/gateaux_main223-223.png);
   overflow: hidden;
 }
 
@@ -356,6 +357,15 @@ aria-hiddenの読み上げのみ
   border-top: 3px dotted #687a78;
 }
 
+/* 
+button 
+*/
+button {
+  display: inline-block;
+  background-color: transparent;
+  border: 0;
+}
+
 /*▼とても大事▼*/
 nav,
 section,
@@ -367,6 +377,8 @@ h3,
 p,
 span,
 table,
+tbody,
+button,
 tr,
 td,
 ul,
