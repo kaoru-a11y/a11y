@@ -80,7 +80,6 @@ headerとかnavigationとか
   width: 100%;
   text-align: center;
   align-items: center;
-  padding-right: 10%;
   background: url(../images/000back.png) repeat-x;
   margin: 0 auto;
   border: 2px solid #687a78;
@@ -92,6 +91,7 @@ headerとかnavigationとか
     width: 100%;
     text-align: center;
     align-items: center;
+    padding-right: 7px;
     background: url(../images/000back.png) repeat-x;
     margin: 0 auto;
     border: 2px solid #687a78;
@@ -148,7 +148,8 @@ p img {
 	height:178px;*/
   color: #ff0007;
 }
-table {
+table,
+tbody {
   border-collapse: collapse;
   text-align: center;
 }
