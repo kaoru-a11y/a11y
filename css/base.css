@@ -250,7 +250,7 @@ clearfix
   display: block;
   padding-top: 38px;
   text-align: center;
-  font-size: 115%;
+  font-size: 107%;
   color: #687a08;
   text-decoration: none;
   text-shadow: 0 0 3px #ffffa8, 0 0 3px #ffffa8, 0 0 3px #ffffa8,
@@ -263,7 +263,7 @@ clearfix
   border-radius: 50%;
   width: 88px;
   height: 88px;
-  background-image: url(../images/fabicon.png);
+  background-image: url(../images/favipiece.png);
   background-size: cover;
   overflow: hidden;
 }
