@@ -1,4 +1,7 @@
 @charset "utf-8";
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background: #f7ffd7 url(../images/bk007.jpg) repeat fixed;
@@ -47,7 +50,6 @@ indexjとindexeのbody
     margin: 0 auto;
   }
 }
-
 /*
 パンくずリスト
 */
@@ -230,18 +232,41 @@ clearfix
   margin: 0 auto;
   text-align: center;
   font-size: 106%;
-  /* align-items: bottom; */
-  /* border-collapse: collapse; */
-  border: solid thin #687a08;
+  align-items: flex-end;
+  /* border-collapse: collapse;
+  border: solid thin #687a08; */
   border-radius: 50%;
-  width: 223px;
-  height: 223px;
+  width: 222px;
+  height: 222px;
   /* line-height: 1.15em; */
   /* padding: -10px; */
-  background-image: url(../images/gateaux_main223-223.png);
+  background-image: url(../images/gateaux_main222-222.png);
   overflow: hidden;
 }
-
+.grandtour-s a {
+  position: fixed;
+  bottom: 7px;
+  right: 7px;
+  display: block;
+  padding-top: 38px;
+  text-align: center;
+  font-size: 115%;
+  color: #687a08;
+  text-decoration: none;
+  text-shadow: 0 0 3px #ffffa8, 0 0 3px #ffffa8, 0 0 3px #ffffa8,
+    0 0 3px #ffffa8, 0 0 3px #ffffa8, 0 0 3px #ffffa8, 0 0 3px #ffffa8,
+    0 0 3px #ffffa8, 0 0 3px #ffffa8, 0 0 3px #ffffa8, 0 0 3px #ffffa8,
+    0 0 3px #ffffa8, 0 0 3px #ffffa8, 0 0 3px #ffffa8, 0 0 3px #ffffa8,
+    0 0 3px #ffffa8;
+  font-weight: bold;
+  align-items: flex-end;
+  border-radius: 50%;
+  width: 88px;
+  height: 88px;
+  background-image: url(../images/fabicon.png);
+  background-size: cover;
+  overflow: hidden;
+}
 /* .grandtour:hover {
   box-shadow: 7px 5px 30% #7ca;
 } */
