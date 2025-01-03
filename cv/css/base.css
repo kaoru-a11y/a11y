@@ -248,7 +248,7 @@ clearfix
   bottom: 7px;
   right: 7px;
   display: block;
-  padding-top: 38px;
+  padding-top: 47px;
   text-align: center;
   font-size: 107%;
   color: #687a08;
@@ -260,7 +260,7 @@ clearfix
     0 0 3px #ffffa8;
   font-weight: bold;
   align-items: flex-end;
-  border-radius: 50%;
+  border-radius: 25%;
   width: 88px;
   height: 88px;
   background-image: url(../images/favipiece.png);
