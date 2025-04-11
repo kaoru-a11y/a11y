@@ -156,7 +156,7 @@ tbody {
   text-align: center;
 }
 td {
-  text-align: left;
+  text-align: right;
 }
 
 h1 {
@@ -248,10 +248,11 @@ clearfix
   bottom: 7px;
   right: 7px;
   display: block;
-  padding-top: 38px;
+  padding-top: 28px;
   text-align: center;
-  font-size: 107%;
+  font-size: 77%;
   color: #687a08;
+  line-height: 100%;
   text-decoration: none;
   text-shadow: 0 0 3px #ffffa8, 0 0 3px #ffffa8, 0 0 3px #ffffa8,
     0 0 3px #ffffa8, 0 0 3px #ffffa8, 0 0 3px #ffffa8, 0 0 3px #ffffa8,
@@ -260,9 +261,9 @@ clearfix
     0 0 3px #ffffa8;
   font-weight: bold;
   align-items: flex-end;
-  border-radius: 50%;
-  width: 88px;
-  height: 88px;
+  border-radius: 25%;
+  width: 61px;
+  height: 61px;
   background-image: url(../images/favipiece.png);
   background-size: cover;
   overflow: hidden;
